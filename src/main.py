@@ -1,12 +1,14 @@
 from lib import *
+import time
 
 def main():
   #simulação exemplo
-  for i in range(20):
-    ShowData(Simulate(neurons=20, Tmax=100, w=0.5))
+
+  ShowData(Simulate(Tmax=200, w=0.5, o=10, seed=123234))
+  ShowData(Simulate(Tmax=200, w=0.5, o=10, seed=int(32452345)))
+  ShowData(Simulate(Tmax=200, w=0.5, o=10, seed=int(928734)))
 
 if __name__ == "__main__":
   main()
 
-#teste
 
