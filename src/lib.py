@@ -32,6 +32,7 @@ def ShowData(content, t=0.5, save=True, name=True):
         content (list): Dados da simulação
         t (float, optional): limiar de excitação do neurônio. Defaults to 0.5.
         save (bool, optional): define se as imagens são salvas ou nao
+        name (str, optional) : nome do arquivo a ser salvo. Defaults to True (bool)
     """
     fig = plt.figure("Degree of a random graph", figsize=(10, 10))
     axgrid = fig.add_gridspec(2, 2)
