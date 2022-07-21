@@ -2,8 +2,6 @@ from lib import *
 
 def main():
   #simulação exemplo
-  for i in range(20):
-    ShowData(Simulate(neurons=20, Tmax=100, w=0.5))
-
+  ShowData(Simulate(neurons=20, Tmax=1000, w=0.4))
 if __name__ == "__main__":
   main()

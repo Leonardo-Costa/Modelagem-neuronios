@@ -18,12 +18,10 @@ def H(v):
   
     return 1 if v >= 0 else 0
   
-
 def FindName():
     for i in range(100):
         if not exists('data/sim-{}.png'.format(i)):
             return 'sim-{}.png'.format(i)
-
 
 def ShowData(content, t=0.5, save=True, name=True):
     """Exibe os gráficos da simulção realizada
@@ -34,7 +32,7 @@ def ShowData(content, t=0.5, save=True, name=True):
         save (bool, optional): define se as imagens são salvas ou nao
         name (str, optional) : nome do arquivo a ser salvo. Defaults to True (bool)
     """
-    fig = plt.figure("Degree of a random graph", figsize=(10, 10))
+    fig = plt.figure("Degree of a random graph", figsize=(10, 6))
     axgrid = fig.add_gridspec(2, 2)
 
     ax1 = fig.add_subplot(axgrid[0, 0:])
@@ -59,7 +57,6 @@ def ShowData(content, t=0.5, save=True, name=True):
         print(FindName())
     else:
         plt.show()
-
 
 def Simulate(DT=0.01, Tmax=1000, neurons=5, t=0.5, w=0.3, e=0.02, a=6, B=0.1, p=0, I=0.1, o=15, seed=10):
     """Realiza a simulação com os parâmetros passados
