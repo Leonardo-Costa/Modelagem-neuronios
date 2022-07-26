@@ -5,4 +5,4 @@ O problema da segmentação de cena, na computação, é o de destacar objetos d
 
 A modelagem do problema foi feita em cima de equações diferenciais e, através do método de Euler, a implementação foi realizada em python.
 
-Os detalhes de como o estudo foi realizado estão contiidos no arquivo relatorio.pdf
+Os detalhes de como o estudo foi realizado estão contiidos no arquivo relatorio-simulacao.pdf
